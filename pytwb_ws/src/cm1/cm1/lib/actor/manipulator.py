@@ -218,8 +218,8 @@ class ManipulatorNetwork(SubNet):
         self.run_actor('sleep', 3.0)
         return True
         '''
-        # joint = [0.0, 1.75, 1.4, 0.0, -1.6, 0.0]
-        joint = [0.0, radians(97), radians(83), 0.0, radians(-83), 0.0]
+        # joint = [0.0, radians(97), radians(83), 0.0, radians(-83), 0.0]
+        joint = [radians(139), radians(-21), radians(-40), radians(-45), radians(35), radians(77)]
         joint[0] = dir
         self.run_actor('move_joint', *joint)
         return True
